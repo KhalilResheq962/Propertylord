@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@700;800&display=swap');
+
+:root {
+  --premium-dark: #0f172a;
+  --premium-accent: #ff6b00;
+  --premium-gold: #c5a059;
+  --premium-bg: #f8fafc;
+  --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--premium-bg);
+  color: var(--premium-dark);
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Glassmorphism Effect */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.85); /* Dark background for white text */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Fancy Hover Effects */
+.hover-lift {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08) !important;
+}
+
+/* Premium Buttons */
+.btn-primary {
+  background-color: var(--premium-accent) !important;
+  color: white !important;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e65a00 !important;
+  transform: scale(1.02);
+}
+
+.btn-outline-primary {
+  border: 2px solid var(--premium-accent) !important;
+  color: var(--premium-accent) !important;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--premium-accent) !important;
+  color: white !important;
+}
+
+.text-primary {
+  color: var(--premium-accent) !important;
+}
+
+.bg-primary {
+  background-color: var(--premium-accent) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.leaflet-container {
+  border-radius: 24px;
+}
